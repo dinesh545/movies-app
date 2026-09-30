@@ -7,7 +7,7 @@ on:
 
 jobs:
   build-ios:
-    runs-on: macos-latest
+    runs-on: macos-14
 
     steps:
       - name: Checkout Code
@@ -25,7 +25,7 @@ jobs:
         run: |
           cd iphone
           mkdir -p Payload
-          xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO -derivedDataPath ./build
+          xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphoneos -configuration Release -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" clean build derivedDataPath ./build
           cp -r ./build/Build/Products/Release-iphoneos/SoniCinemas.app Payload/
           zip -r SoniCinemas.ipa Payload
 
