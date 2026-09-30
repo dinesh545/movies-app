@@ -25,8 +25,7 @@ jobs:
         run: |
           cd iphone
           mkdir -p Payload
-          set -o pipefail
-          xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphonesimulator -configuration Release build derivedDataPath ./build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=""
+          xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -destination 'generic/platform=iOS' -configuration Release -derivedDataPath ./build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" clean build || xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphonesimulator -configuration Release -derivedDataPath ./build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" clean build
           APP_PATH=$(find ./build/Build/Products/ -name "SoniCinemas.app" | head -n 1)
           echo "App path found: $APP_PATH"
           cp -r "$APP_PATH" Payload/

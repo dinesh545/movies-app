@@ -55,7 +55,9 @@ struct LoginView: View {
                             Button(action: performLogin) {
                                 HStack {
                                     if isLoading {
-                                        ProgressView().progressViewStyle(CircularProgressViewStyle(tint: .white))
+                                        ProgressView()
+                                            .progressViewStyle(CircularProgressViewStyle())
+                                            .tint(.white)
                                     } else {
                                         Text("LOGIN").fontWeight(.bold)
                                     }

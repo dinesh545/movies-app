@@ -170,9 +170,7 @@ struct SeriesDetailView: View {
         }
         .navigationTitle(seriesTitle)
         .fullScreenCover(item: $playingEpisode) { ep in
-            if let videoUrl = ep.videoUrl {
-                PlayerScreen(title: ep.title ?? "Episode", videoUrlString: videoUrl)
-            }
+            PlayerScreen(title: ep.title ?? "Episode", videoUrlString: ep.videoUrl ?? "")
         }
         .onAppear { loadDetail() }
     }

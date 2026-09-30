@@ -77,7 +77,9 @@ struct SuggestionView: View {
                         Button(action: submitSuggestion) {
                             HStack {
                                 if isLoading {
-                                    ProgressView().progressViewStyle(CircularProgressViewStyle(tint: .white))
+                                    ProgressView()
+                                        .progressViewStyle(CircularProgressViewStyle())
+                                        .tint(.white)
                                 } else {
                                     Text("SUBMIT SUGGESTION").fontWeight(.bold)
                                 }

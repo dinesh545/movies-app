@@ -67,7 +67,9 @@ struct RegisterView: View {
                         Button(action: performRegister) {
                             HStack {
                                 if isLoading {
-                                    ProgressView().progressViewStyle(CircularProgressViewStyle(tint: .white))
+                                    ProgressView()
+                                        .progressViewStyle(CircularProgressViewStyle())
+                                        .tint(.white)
                                 } else {
                                     Text("REGISTER").fontWeight(.bold)
                                 }
@@ -158,7 +160,9 @@ struct VerifyOtpView: View {
                 Button(action: verifyOtp) {
                     HStack {
                         if isLoading {
-                            ProgressView().progressViewStyle(CircularProgressViewStyle(tint: .white))
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle())
+                                .tint(.white)
                         } else {
                             Text("VERIFY OTP").fontWeight(.bold)
                         }

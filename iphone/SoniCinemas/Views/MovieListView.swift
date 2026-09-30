@@ -60,9 +60,7 @@ struct MovieListView: View {
             .navigationTitle("Movies")
             .navigationBarTitleDisplayMode(.inline)
             .fullScreenCover(item: $selectedMedia) { item in
-                if let videoUrl = item.videoUrl {
-                    PlayerScreen(title: item.title, videoUrlString: videoUrl)
-                }
+                PlayerScreen(title: item.title, videoUrlString: item.videoUrl ?? "")
             }
             .onAppear {
                 if movies.isEmpty { loadMovies() }
