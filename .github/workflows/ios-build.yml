@@ -21,14 +21,19 @@ jobs:
           cd iphone
           xcodegen generate
 
-      - name: Create Unsigned IPA
+      - name: Create Unsigned IPA via Archive
         run: |
           cd iphone
           mkdir -p Payload
-          xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphoneos -configuration Release -derivedDataPath ./build CODE_SIGN_STYLE="Manual" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO clean build || xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphonesimulator -configuration Release -derivedDataPath ./build CODE_SIGN_STYLE="Manual" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO clean build
-          APP_PATH=$(find ./build/Build/Products/ -name "SoniCinemas.app" | head -n 1)
-          echo "App path found: $APP_PATH"
-          cp -r "$APP_PATH" Payload/
+          xcodebuild archive \
+            -project SoniCinemas.xcodeproj \
+            -scheme SoniCinemas \
+            -archivePath ./build/SoniCinemas.xcarchive \
+            -destination "generic/platform=iOS" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+          cp -r ./build/SoniCinemas.xcarchive/Products/Applications/SoniCinemas.app Payload/
           zip -r SoniCinemas.ipa Payload
 
       - name: Upload IPA Artifact
