@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#0284C7</item>
+        <item name="colorPrimaryDark">#0F172A</item>
+        <item name="colorSecondary">#38BDF8</item>
+        <item name="colorSecondaryVariant">#0284C7</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#0F172A</item>
+        <item name="android:windowBackground">#0F172A</item>
+        <item name="android:textColor">#F8FAFC</item>
+    </style>
+</resources>

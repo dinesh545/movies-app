@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playerContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true" />
+
+    <!-- Top Bar Control Overlay -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#99090D16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_tv_button_focus"
+            android:contentDescription="Back"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_back_arrow"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Soni Cinemas"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Audio Track Selector Button -->
+        <ImageButton
+            android:id="@+id/btnAudioTrack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_tv_button_focus"
+            android:contentDescription="Audio Track"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_audio_track"
+            app:tint="#38BDF8" />
+
+        <!-- Open in External Player (VLC/MX Player) Button -->
+        <ImageButton
+            android:id="@+id/btnExternalPlayer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_tv_button_focus"
+            android:contentDescription="Play in External Player (VLC/MX)"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_open_in_new"
+            app:tint="#38BDF8" />
+
+        <!-- Subtitles Track Selector Button -->
+        <ImageButton
+            android:id="@+id/btnSubtitle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_tv_button_focus"
+            android:contentDescription="Subtitles"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_subtitles"
+            app:tint="#38BDF8" />
+
+        <!-- Aspect Ratio / Resize Mode Button -->
+        <ImageButton
+            android:id="@+id/btnResizeMode"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/bg_tv_button_focus"
+            android:contentDescription="Aspect Ratio"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_aspect_ratio"
+            app:tint="#38BDF8" />
+
+        <!-- Orientation Toggle Button (Portrait <-> Landscape) -->
+        <ImageButton
+            android:id="@+id/btnToggleOrientation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_tv_button_focus"
+            android:contentDescription="Toggle Screen Orientation"
+            android:focusable="true"
+            app:srcCompat="@drawable/ic_screen_rotation"
+            app:tint="#38BDF8" />
+
+    </LinearLayout>
+
+    <!-- Overlay HUD for Gesture Feedback (Volume, Brightness, Orientation) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/gestureCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:cardBackgroundColor="#CC0F172A"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:strokeColor="#38BDF8"
+        app:strokeWidth="1.5dp">
+
+        <TextView
+            android:id="@+id/tvGestureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="🔊 Volume: 50%"
+            android:textColor="#F8FAFC"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

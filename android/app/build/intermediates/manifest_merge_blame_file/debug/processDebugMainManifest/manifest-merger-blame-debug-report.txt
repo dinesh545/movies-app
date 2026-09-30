@@ -1,0 +1,242 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.movieapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\movies\android\app\src\main\AndroidManifest.xml:5:5-67
+11-->D:\movies\android\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\movies\android\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\movies\android\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->D:\movies\android\app\src\main\AndroidManifest.xml:7:5-77
+13-->D:\movies\android\app\src\main\AndroidManifest.xml:7:22-74
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->D:\movies\android\app\src\main\AndroidManifest.xml:8:5-77
+14-->D:\movies\android\app\src\main\AndroidManifest.xml:8:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+15-->D:\movies\android\app\src\main\AndroidManifest.xml:9:5-87
+15-->D:\movies\android\app\src\main\AndroidManifest.xml:9:22-84
+16
+17    <permission
+17-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.movieapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.movieapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->D:\movies\android\app\src\main\AndroidManifest.xml:11:5-90:19
+24        android:name="com.movieapp.MyApplication"
+24-->D:\movies\android\app\src\main\AndroidManifest.xml:12:9-38
+25        android:allowBackup="true"
+25-->D:\movies\android\app\src\main\AndroidManifest.xml:13:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:extractNativeLibs="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->D:\movies\android\app\src\main\AndroidManifest.xml:14:9-43
+30        android:label="Soni Cinemas"
+30-->D:\movies\android\app\src\main\AndroidManifest.xml:16:9-37
+31        android:roundIcon="@mipmap/ic_launcher"
+31-->D:\movies\android\app\src\main\AndroidManifest.xml:15:9-48
+32        android:supportsRtl="true"
+32-->D:\movies\android\app\src\main\AndroidManifest.xml:17:9-35
+33        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+33-->D:\movies\android\app\src\main\AndroidManifest.xml:18:9-77
+34        android:usesCleartextTraffic="true" >
+34-->D:\movies\android\app\src\main\AndroidManifest.xml:19:9-44
+35        <activity
+35-->D:\movies\android\app\src\main\AndroidManifest.xml:22:9-30:20
+36            android:name="com.movieapp.SplashActivity"
+36-->D:\movies\android\app\src\main\AndroidManifest.xml:23:13-43
+37            android:exported="true"
+37-->D:\movies\android\app\src\main\AndroidManifest.xml:24:13-36
+38            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" >
+38-->D:\movies\android\app\src\main\AndroidManifest.xml:25:13-81
+39            <intent-filter>
+39-->D:\movies\android\app\src\main\AndroidManifest.xml:26:13-29:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->D:\movies\android\app\src\main\AndroidManifest.xml:27:17-69
+40-->D:\movies\android\app\src\main\AndroidManifest.xml:27:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->D:\movies\android\app\src\main\AndroidManifest.xml:28:17-77
+42-->D:\movies\android\app\src\main\AndroidManifest.xml:28:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->D:\movies\android\app\src\main\AndroidManifest.xml:32:9-35:58
+46            android:name="com.movieapp.LoginActivity"
+46-->D:\movies\android\app\src\main\AndroidManifest.xml:33:13-42
+47            android:exported="false"
+47-->D:\movies\android\app\src\main\AndroidManifest.xml:34:13-37
+48            android:windowSoftInputMode="adjustResize" />
+48-->D:\movies\android\app\src\main\AndroidManifest.xml:35:13-55
+49        <activity
+49-->D:\movies\android\app\src\main\AndroidManifest.xml:37:9-40:58
+50            android:name="com.movieapp.RegisterActivity"
+50-->D:\movies\android\app\src\main\AndroidManifest.xml:38:13-45
+51            android:exported="false"
+51-->D:\movies\android\app\src\main\AndroidManifest.xml:39:13-37
+52            android:windowSoftInputMode="adjustResize" />
+52-->D:\movies\android\app\src\main\AndroidManifest.xml:40:13-55
+53        <activity
+53-->D:\movies\android\app\src\main\AndroidManifest.xml:42:9-45:58
+54            android:name="com.movieapp.VerifyOtpActivity"
+54-->D:\movies\android\app\src\main\AndroidManifest.xml:43:13-46
+55            android:exported="false"
+55-->D:\movies\android\app\src\main\AndroidManifest.xml:44:13-37
+56            android:windowSoftInputMode="adjustResize" />
+56-->D:\movies\android\app\src\main\AndroidManifest.xml:45:13-55
+57        <activity
+57-->D:\movies\android\app\src\main\AndroidManifest.xml:47:9-50:58
+58            android:name="com.movieapp.ForgotPasswordActivity"
+58-->D:\movies\android\app\src\main\AndroidManifest.xml:48:13-51
+59            android:exported="false"
+59-->D:\movies\android\app\src\main\AndroidManifest.xml:49:13-37
+60            android:windowSoftInputMode="adjustResize" />
+60-->D:\movies\android\app\src\main\AndroidManifest.xml:50:13-55
+61        <activity
+61-->D:\movies\android\app\src\main\AndroidManifest.xml:52:9-54:40
+62            android:name="com.movieapp.MainActivity"
+62-->D:\movies\android\app\src\main\AndroidManifest.xml:53:13-41
+63            android:exported="false" />
+63-->D:\movies\android\app\src\main\AndroidManifest.xml:54:13-37
+64        <activity
+64-->D:\movies\android\app\src\main\AndroidManifest.xml:56:9-59:84
+65            android:name="com.movieapp.DownloadsActivity"
+65-->D:\movies\android\app\src\main\AndroidManifest.xml:57:13-46
+66            android:exported="false"
+66-->D:\movies\android\app\src\main\AndroidManifest.xml:58:13-37
+67            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+67-->D:\movies\android\app\src\main\AndroidManifest.xml:59:13-81
+68        <activity
+68-->D:\movies\android\app\src\main\AndroidManifest.xml:61:9-65:84
+69            android:name="com.movieapp.PlayerActivity"
+69-->D:\movies\android\app\src\main\AndroidManifest.xml:62:13-43
+70            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize"
+70-->D:\movies\android\app\src\main\AndroidManifest.xml:63:13-91
+71            android:exported="false"
+71-->D:\movies\android\app\src\main\AndroidManifest.xml:64:13-37
+72            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+72-->D:\movies\android\app\src\main\AndroidManifest.xml:65:13-81
+73        <activity
+73-->D:\movies\android\app\src\main\AndroidManifest.xml:67:9-70:84
+74            android:name="com.movieapp.SeriesDetailActivity"
+74-->D:\movies\android\app\src\main\AndroidManifest.xml:68:13-49
+75            android:exported="false"
+75-->D:\movies\android\app\src\main\AndroidManifest.xml:69:13-37
+76            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+76-->D:\movies\android\app\src\main\AndroidManifest.xml:70:13-81
+77        <activity
+77-->D:\movies\android\app\src\main\AndroidManifest.xml:72:9-75:58
+78            android:name="com.movieapp.SuggestionActivity"
+78-->D:\movies\android\app\src\main\AndroidManifest.xml:73:13-47
+79            android:exported="false"
+79-->D:\movies\android\app\src\main\AndroidManifest.xml:74:13-37
+80            android:windowSoftInputMode="adjustResize" />
+80-->D:\movies\android\app\src\main\AndroidManifest.xml:75:13-55
+81
+82        <receiver
+82-->D:\movies\android\app\src\main\AndroidManifest.xml:77:9-83:20
+83            android:name="com.movieapp.util.DownloadReceiver"
+83-->D:\movies\android\app\src\main\AndroidManifest.xml:78:13-50
+84            android:exported="true" >
+84-->D:\movies\android\app\src\main\AndroidManifest.xml:79:13-36
+85            <intent-filter>
+85-->D:\movies\android\app\src\main\AndroidManifest.xml:80:13-82:29
+86                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+86-->D:\movies\android\app\src\main\AndroidManifest.xml:81:17-82
+86-->D:\movies\android\app\src\main\AndroidManifest.xml:81:25-79
+87            </intent-filter>
+88        </receiver>
+89
+90        <service
+90-->D:\movies\android\app\src\main\AndroidManifest.xml:85:9-88:56
+91            android:name="com.movieapp.util.VideoDownloadService"
+91-->D:\movies\android\app\src\main\AndroidManifest.xml:86:13-54
+92            android:exported="false"
+92-->D:\movies\android\app\src\main\AndroidManifest.xml:87:13-37
+93            android:foregroundServiceType="dataSync" />
+93-->D:\movies\android\app\src\main\AndroidManifest.xml:88:13-53
+94
+95        <provider
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+96            android:name="androidx.startup.InitializationProvider"
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+97            android:authorities="com.movieapp.androidx-startup"
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+98            android:exported="false" >
+98-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+99            <meta-data
+99-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+100-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+101                android:value="androidx.startup" />
+101-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+102            <meta-data
+102-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bce7444bf07903c231028e40d6e0feff\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+103-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bce7444bf07903c231028e40d6e0feff\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+104                android:value="androidx.startup" />
+104-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bce7444bf07903c231028e40d6e0feff\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+105            <meta-data
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+107                android:value="androidx.startup" />
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+108        </provider>
+109
+110        <receiver
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+111            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+112            android:directBootAware="false"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+113            android:enabled="true"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+114            android:exported="true"
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+115            android:permission="android.permission.DUMP" >
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+117                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+118            </intent-filter>
+119            <intent-filter>
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+120                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+120-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+121            </intent-filter>
+122            <intent-filter>
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+123                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+123-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+124            </intent-filter>
+125            <intent-filter>
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+126                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+126-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+127            </intent-filter>
+128        </receiver>
+129    </application>
+130
+131</manifest>

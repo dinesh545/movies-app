@@ -1,0 +1,33 @@
+name: Build iOS IPA for iPhone 15
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-ios:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Create Unsigned IPA
+        run: |
+          cd iphone
+          mkdir -p Payload
+          xcodebuild -project SoniCinemas.xcodeproj -scheme SoniCinemas -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO -derivedDataPath ./build
+          cp -r ./build/Build/Products/Release-iphoneos/SoniCinemas.app Payload/
+          zip -r SoniCinemas.ipa Payload
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: SoniCinemas-iPhone15
+          path: iphone/SoniCinemas.ipa

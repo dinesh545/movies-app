@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Soni Cinemas</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Soni Cinemas">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/color/180/movie-projector.png">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
+    body { background-color: #0d0d0d; color: #fff; padding-bottom: 70px; user-select: none; }
+    header { background: #141414; padding: 15px; text-align: center; border-bottom: 1px solid #222; position: sticky; top: 0; z-index: 100; }
+    header h1 { color: #e50914; font-size: 20px; font-weight: 800; letter-spacing: 1px; }
+    .nav-tabs { display: flex; background: #1a1a1a; position: fixed; bottom: 0; width: 100%; height: 60px; border-top: 1px solid #333; z-index: 100; }
+    .tab-btn { flex: 1; border: none; background: none; color: #888; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 11px; cursor: pointer; }
+    .tab-btn.active { color: #e50914; font-weight: bold; }
+    .tab-btn svg { width: 22px; height: 22px; fill: currentColor; margin-bottom: 2px; }
+    .screen { display: none; padding: 15px; }
+    .screen.active { display: block; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 15px; }
+    .card { background: #1c1c1c; border-radius: 10px; overflow: hidden; cursor: pointer; transition: transform 0.2s; }
+    .card:active { transform: scale(0.96); }
+    .card img { width: 100%; aspect-ratio: 2/3; object-fit: cover; }
+    .card-title { padding: 10px; font-size: 14px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .input-field { width: 100%; padding: 14px; margin-bottom: 12px; background: #222; border: 1px solid #333; border-radius: 8px; color: #fff; font-size: 15px; outline: none; }
+    .btn-red { width: 100%; padding: 14px; background: #e50914; border: none; border-radius: 8px; color: #fff; font-weight: bold; font-size: 16px; cursor: pointer; margin-top: 10px; }
+    .player-modal { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #000; z-index: 999; display: none; flex-direction: column; }
+    .player-modal.active { display: flex; }
+    .player-modal video { width: 100%; height: 100%; object-fit: contain; }
+    .close-player { position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.7); color: #fff; border: none; font-size: 24px; width: 40px; height: 40px; border-radius: 50%; z-index: 1000; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SONI CINEMAS</h1>
+</header>
+
+<div id="moviesScreen" class="screen active">
+  <input type="text" class="input-field" placeholder="Search Movies..." oninput="filterMedia('movies', this.value)">
+  <div id="moviesGrid" class="grid"></div>
+</div>
+
+<div id="seriesScreen" class="screen">
+  <input type="text" class="input-field" placeholder="Search Web Series..." oninput="filterMedia('series', this.value)">
+  <div id="seriesGrid" class="grid"></div>
+</div>
+
+<div id="suggestionsScreen" class="screen">
+  <h2 style="margin-bottom:15px;">Send Request / Suggestion</h2>
+  <select class="input-field" id="suggCategory">
+    <option>Movie Request</option>
+    <option>Web Series Request</option>
+    <option>App Feedback</option>
+    <option>Bug Report</option>
+  </select>
+  <input type="text" id="suggName" class="input-field" placeholder="Your Name">
+  <input type="email" id="suggEmail" class="input-field" placeholder="Your Email">
+  <textarea id="suggText" class="input-field" style="height:100px;" placeholder="Describe movie/series request..."></textarea>
+  <button class="btn-red" onclick="submitSuggestion()">Submit Request</button>
+  <p id="suggMsg" style="margin-top:15px; text-align:center;"></p>
+</div>
+
+<div id="playerModal" class="player-modal">
+  <button class="close-player" onclick="closePlayer()">&times;</button>
+  <video id="videoPlayer" controls autoplay playsinline></video>
+</div>
+
+<div class="nav-tabs">
+  <button class="tab-btn active" onclick="switchTab('moviesScreen', this)">
+    <svg viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H9l2 4H8L6 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+    Movies
+  </button>
+  <button class="tab-btn" onclick="switchTab('seriesScreen', this)">
+    <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+    Series
+  </button>
+  <button class="tab-btn" onclick="switchTab('suggestionsScreen', this)">
+    <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+    Suggest
+  </button>
+</div>
+
+<script>
+  let moviesData = [];
+  let seriesData = [];
+
+  function switchTab(screenId, btn) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(screenId).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  async function loadData() {
+    try {
+      let resM = await fetch('../../backend/api/movies.php');
+      let dataM = await resM.json();
+      moviesData = dataM.movies || dataM.data || [];
+      renderMedia('moviesGrid', moviesData);
+
+      let resS = await fetch('../../backend/api/series.php');
+      let dataS = await resS.json();
+      seriesData = dataS.series || dataS.data || [];
+      renderMedia('seriesGrid', seriesData);
+    } catch(e) {
+      console.log('Error loading data', e);
+    }
+  }
+
+  function renderMedia(containerId, items) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = items.map(item => `
+      <div class="card" onclick="playVideo('${item.video_url || ''}')">
+        <img src="${item.poster_url || ''}" alt="${item.title}" onerror="this.src='https://via.placeholder.com/150x225?text=No+Poster'">
+        <div class="card-title">${item.title}</div>
+      </div>
+    `).join('');
+  }
+
+  function filterMedia(type, query) {
+    let list = type === 'movies' ? moviesData : seriesData;
+    let filtered = list.filter(i => i.title.toLowerCase().includes(query.toLowerCase()));
+    renderMedia(type === 'movies' ? 'moviesGrid' : 'seriesGrid', filtered);
+  }
+
+  function playVideo(url) {
+    if (!url) { alert('Video URL not available'); return; }
+    const modal = document.getElementById('playerModal');
+    const player = document.getElementById('videoPlayer');
+    player.src = url;
+    modal.classList.add('active');
+  }
+
+  function closePlayer() {
+    const modal = document.getElementById('playerModal');
+    const player = document.getElementById('videoPlayer');
+    player.pause();
+    player.src = '';
+    modal.classList.remove('active');
+  }
+
+  async function submitSuggestion() {
+    const category = document.getElementById('suggCategory').value;
+    const name = document.getElementById('suggName').value;
+    const email = document.getElementById('suggEmail').value;
+    const text = document.getElementById('suggText').value;
+    const msg = document.getElementById('suggMsg');
+
+    if (!text) { msg.innerText = 'Please enter suggestion text'; msg.style.color = 'red'; return; }
+
+    const formData = new FormData();
+    formData.append('category', category);
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('suggestion_text', text);
+
+    try {
+      let res = await fetch('../../backend/api/submit_suggestion.php', { method: 'POST', body: formData });
+      let data = await res.json();
+      msg.innerText = data.message || 'Submitted successfully!';
+      msg.style.color = 'green';
+      document.getElementById('suggText').value = '';
+    } catch(e) {
+      msg.innerText = 'Submission failed';
+      msg.style.color = 'red';
+    }
+  }
+
+  loadData();
+</script>
+</body>
+</html>

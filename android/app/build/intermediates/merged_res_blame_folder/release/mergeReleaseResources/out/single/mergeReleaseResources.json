@@ -1,0 +1,310 @@
+[
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_audio_track.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_audio_track.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_check_circle.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_check_circle.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_delete.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_delete.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_downloads.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_downloads.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_back_arrow.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_back_arrow.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_delete.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_delete.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_check_circle.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_check_circle.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable_ic_logo.jpg.flat",
+        "source": "com.movieapp-main-37:/drawable/ic_logo.jpg"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_check_circle.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_check_circle.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.movieapp-main-37:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_audio_track.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_audio_track.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_screen_rotation.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_screen_rotation.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_subtitles.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_subtitles.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_screen_rotation.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_screen_rotation.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_aspect_ratio.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_aspect_ratio.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_aspect_ratio.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_aspect_ratio.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_download.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_download.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.movieapp-main-37:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_audio_track.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_audio_track.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_screen_rotation.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_screen_rotation.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_series_detail.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_series_detail.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_subtitles.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_subtitles.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_subtitles.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_subtitles.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_login.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_download.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_download.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_delete.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_delete.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_splash.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_aspect_ratio.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_aspect_ratio.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_subtitles.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_subtitles.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_audio_track.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_audio_track.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_audio_track.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_audio_track.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_back_arrow.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_back_arrow.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_item_spinner_season.xml.flat",
+        "source": "com.movieapp-main-37:/layout/item_spinner_season.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_back_arrow.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_back_arrow.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_screen_rotation.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_screen_rotation.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_screen_rotation.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_screen_rotation.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_check_circle.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_check_circle.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_suggestion.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_suggestion.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_subtitles.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_subtitles.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_audio_track.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_audio_track.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_back_arrow.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_back_arrow.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_download.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_download.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_verify_otp.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_verify_otp.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.movieapp-main-37:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_download.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_download.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_aspect_ratio.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_aspect_ratio.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_forgot_password.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_player.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_player.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_back_arrow.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_back_arrow.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_check_circle.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_check_circle.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_aspect_ratio.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_aspect_ratio.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_delete.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_delete.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_main.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_subtitles.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_subtitles.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxhdpi_ic_screen_rotation.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxhdpi/ic_screen_rotation.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-hdpi_ic_aspect_ratio.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-hdpi/ic_aspect_ratio.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_check_circle.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_check_circle.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_delete.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_delete.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_check_circle.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_check_circle.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_item_download.xml.flat",
+        "source": "com.movieapp-main-37:/layout/item_download.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_delete.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_delete.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_screen_rotation.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_screen_rotation.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_item_movie.xml.flat",
+        "source": "com.movieapp-main-37:/layout/item_movie.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_download.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_download.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_audio_track.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_audio_track.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xxxhdpi_ic_subtitles.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xxxhdpi/ic_subtitles.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_download.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_download.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_activity_register.xml.flat",
+        "source": "com.movieapp-main-37:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_aspect_ratio.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_aspect_ratio.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.movieapp-main-37:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-mdpi_ic_download.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-mdpi/ic_download.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.movieapp-main-37:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_item_spinner_season_dropdown.xml.flat",
+        "source": "com.movieapp-main-37:/layout/item_spinner_season_dropdown.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/layout_item_episode.xml.flat",
+        "source": "com.movieapp-main-37:/layout/item_episode.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-ldpi_ic_delete.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-ldpi/ic_delete.png"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-anydpi-v21_ic_back_arrow.xml.flat",
+        "source": "com.movieapp-pngs-32:/drawable-anydpi-v21/ic_back_arrow.xml"
+    },
+    {
+        "merged": "com.movieapp-release-36:/drawable-xhdpi_ic_back_arrow.png.flat",
+        "source": "com.movieapp-pngs-32:/drawable-xhdpi/ic_back_arrow.png"
+    }
+]

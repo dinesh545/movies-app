@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.movieapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.movieapp"
+        minSdk 19
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError = false
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.squareup.okhttp3:okhttp:3.12.13'
+        force 'com.squareup.okhttp3:logging-interceptor:3.12.13'
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Conscrypt for modern TLS on older Androids
+    implementation 'org.conscrypt:conscrypt-android:2.5.2'
+
+    // Retrofit2 & Gson for PHP API
+    implementation ('com.squareup.retrofit2:retrofit:2.9.0') {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    // OkHttp 3.12.x is the last version to support API 19 (Android 4.4 KitKat)
+    implementation 'com.squareup.okhttp3:okhttp:3.12.13'
+
+    // AndroidX Media3 ExoPlayer for Video Streaming
+    implementation 'androidx.media3:media3-exoplayer:1.2.1'
+    implementation 'androidx.media3:media3-ui:1.2.1'
+
+    // Glide for image loading
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // Multidex for API < 21
+    implementation 'androidx.multidex:multidex:2.0.1'
+}

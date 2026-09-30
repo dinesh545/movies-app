@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#38BDF8</color>
+    <color name="accent_focused">#FACC15</color>
+    <color name="badge_live">#EF4444</color>
+    <color name="bg_dark">#0B0F19</color>
+    <color name="black">#000000</color>
+    <color name="card_bg">#1E2230</color>
+    <color name="card_bg_focused">#2A324B</color>
+    <color name="card_stroke">#334155</color>
+    <color name="osd_background">#E60F172A</color>
+    <color name="primary">#1E293B</color>
+    <color name="primary_dark">#0F172A</color>
+    <color name="star_color">#F59E0B</color>
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">Soni IPTV</string>
+    <string name="channels_count">%d Channels</string>
+    <string name="live_badge">LIVE</string>
+    <string name="loading_playlist">Loading IPTV Channels…</string>
+    <string name="no_channels">No channels found</string>
+    <string name="playlist_url_hint">http://example.com/playlist.m3u</string>
+    <string name="playlist_url_title">M3U Playlist URL</string>
+    <string name="reconnecting">Reconnecting stream…</string>
+    <string name="reload_playlist">Reload Playlist</string>
+    <string name="reset_default">Reset to Default Playlist</string>
+    <string name="save">Save &amp; Reload</string>
+    <string name="search_hint">Search channels or categories…</string>
+    <string name="settings">Settings</string>
+    <string name="stream_error">Unable to play stream. Press retry.</string>
+    <string name="tab_all">All Channels</string>
+    <string name="tab_favorites">★ Favorites</string>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#0284C7</item>
+        <item name="colorPrimaryDark">#0F172A</item>
+        <item name="colorSecondary">#38BDF8</item>
+        <item name="colorSecondaryVariant">#0284C7</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#0F172A</item>
+        <item name="android:windowBackground">#0F172A</item>
+        <item name="android:textColor">#F8FAFC</item>
+    </style>
+</resources>

@@ -1,0 +1,183 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.soni.iptv"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:5:5-79
+12-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:6:5-68
+13-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:6:22-65
+14
+15    <!-- Allow installation on Android TV / TV Boxes without touch screens -->
+16    <uses-feature
+16-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:9:5-11:36
+17        android:name="android.hardware.touchscreen"
+17-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:10:9-52
+18        android:required="false" />
+18-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:11:9-33
+19    <uses-feature
+19-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:12:5-14:36
+20        android:name="android.software.leanback"
+20-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:13:9-49
+21        android:required="false" />
+21-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:14:9-33
+22
+23    <permission
+23-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+24        android:name="com.soni.iptv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.soni.iptv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:16:5-52:19
+30        android:name="com.soni.iptv.IptvApplication"
+30-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:17:9-40
+31        android:allowBackup="true"
+31-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:18:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.9.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\e97faed472176bc7a82f8f5b7093975f\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="true"
+35        android:icon="@drawable/ic_launcher"
+35-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:19:9-45
+36        android:label="@string/app_name"
+36-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:20:9-41
+37        android:roundIcon="@drawable/ic_launcher"
+37-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:21:9-50
+38        android:supportsRtl="true"
+38-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:22:9-35
+39        android:theme="@style/Theme.IptvApp"
+39-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:23:9-45
+40        android:usesCleartextTraffic="true" >
+40-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:24:9-44
+41        <activity
+41-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:26:9-37:20
+42            android:name="com.soni.iptv.MainActivity"
+42-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:27:13-41
+43            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+43-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:28:13-87
+44            android:exported="true"
+44-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:29:13-36
+45            android:windowSoftInputMode="adjustPan" >
+45-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:30:13-52
+46            <intent-filter>
+46-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:31:13-36:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:32:17-69
+47-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:32:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:33:17-77
+49-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:33:27-74
+50                <!-- Leanback launcher category for Android TV -->
+51                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+51-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:35:17-86
+51-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:35:27-83
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:39:9-44:59
+55            android:name="com.soni.iptv.PlayerActivity"
+55-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:40:13-43
+56            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|keyboard|smallestScreenSize|uiMode"
+56-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:41:13-122
+57            android:exported="false"
+57-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:42:13-37
+58            android:screenOrientation="sensorLandscape"
+58-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:43:13-56
+59            android:theme="@style/Theme.IptvApp.Player" />
+59-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:44:13-56
+60        <activity
+60-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:46:9-50:45
+61            android:name="com.soni.iptv.SettingsActivity"
+61-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:47:13-45
+62            android:configChanges="orientation|screenSize|keyboardHidden"
+62-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:48:13-74
+63            android:exported="false"
+63-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:49:13-37
+64            android:label="IPTV Settings" />
+64-->D:\movies\iptv_android\app\src\main\AndroidManifest.xml:50:13-42
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+68            android:authorities="com.soni.iptv.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\fcec39bba1f5eeb930b0377f93199c51\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bce7444bf07903c231028e40d6e0feff\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bce7444bf07903c231028e40d6e0feff\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bce7444bf07903c231028e40d6e0feff\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+78                android:value="androidx.startup" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+79        </provider>
+80
+81        <receiver
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+82            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+83            android:directBootAware="false"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+84            android:enabled="true"
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+85            android:exported="true"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+86            android:permission="android.permission.DUMP" >
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+87            <intent-filter>
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+88                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+89            </intent-filter>
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+91                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+92            </intent-filter>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+94                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+97                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Dinesh Saharan\.gradle\caches\9.7.1\transforms\bfd9496dbcd4adf2916f350b55cec406\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+98            </intent-filter>
+99        </receiver>
+100    </application>
+101
+102</manifest>

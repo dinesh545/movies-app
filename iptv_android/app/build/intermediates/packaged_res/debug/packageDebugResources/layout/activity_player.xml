@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playerRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:keepScreenOn="true">
+
+    <!-- Video Surface -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:surface_type="surface_view"
+        app:use_controller="false" />
+
+    <!-- Loading / Buffering Spinner -->
+    <LinearLayout
+        android:id="@+id/layoutBuffering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_channel_focused"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/tvBufferingStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Buffering Live Stream…"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Top OSD Banner -->
+    <LinearLayout
+        android:id="@+id/layoutTopOsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#D90B0F19"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/tvPlayerChannelNumber"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_category_normal"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/accent"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPlayerChannelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Channel Name"
+                android:textColor="@color/text_primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPlayerChannelGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Quick Channel List Toggle Button -->
+        <ImageButton
+            android:id="@+id/btnToggleDrawer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true"
+            android:contentDescription="Channels"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_tv" />
+
+        <!-- Aspect Ratio Button -->
+        <ImageButton
+            android:id="@+id/btnAspectRatio"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true"
+            android:contentDescription="Aspect Ratio"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_aspect_ratio" />
+
+        <!-- Audio Track Selector Button -->
+        <ImageButton
+            android:id="@+id/btnAudioTrack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/selector_category_item"
+            android:clickable="true"
+            android:contentDescription="Audio Track"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_audio_track" />
+    </LinearLayout>
+
+    <!-- Bottom OSD Bar (Channel Zapping & Live Status) -->
+    <LinearLayout
+        android:id="@+id/layoutBottomOsd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#D90B0F19"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/badge_live_bg"
+            android:text="● LIVE"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStreamInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="HLS Live Stream"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <!-- Prev Channel Button -->
+        <Button
+            android:id="@+id/btnPrevChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/selector_category_item"
+            android:focusable="true"
+            android:paddingHorizontal="12dp"
+            android:text="◀ PREV CH"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+
+        <!-- Next Channel Button -->
+        <Button
+            android:id="@+id/btnNextChannel"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/selector_category_item"
+            android:focusable="true"
+            android:paddingHorizontal="12dp"
+            android:text="NEXT CH ▶"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Left In-Player OSD Channel List Drawer -->
+    <LinearLayout
+        android:id="@+id/layoutSideDrawer"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/osd_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="📺 Quick Channel Switch"
+            android:textColor="@color/accent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDrawerChannels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

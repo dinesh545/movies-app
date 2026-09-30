@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Soni IPTV</string>
+    <string name="tab_all">All Channels</string>
+    <string name="tab_favorites">★ Favorites</string>
+    <string name="search_hint">Search channels or categories…</string>
+    <string name="no_channels">No channels found</string>
+    <string name="loading_playlist">Loading IPTV Channels…</string>
+    <string name="settings">Settings</string>
+    <string name="reload_playlist">Reload Playlist</string>
+    <string name="playlist_url_title">M3U Playlist URL</string>
+    <string name="playlist_url_hint">http://example.com/playlist.m3u</string>
+    <string name="save">Save &amp; Reload</string>
+    <string name="reset_default">Reset to Default Playlist</string>
+    <string name="live_badge">LIVE</string>
+    <string name="channels_count">%d Channels</string>
+    <string name="reconnecting">Reconnecting stream…</string>
+    <string name="stream_error">Unable to play stream. Press retry.</string>
+</resources>

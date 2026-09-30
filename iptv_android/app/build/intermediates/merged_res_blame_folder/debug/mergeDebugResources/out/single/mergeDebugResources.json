@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_refresh.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_refresh.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_back_arrow.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_back_arrow.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_audio_track.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_audio_track.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_launcher.jpg.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_launcher.jpg"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_selector_channel_item.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/selector_channel_item.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_search.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_search.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/layout_item_channel.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/layout/item_channel.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_star_filled.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_star_filled.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_selector_category_item.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/selector_category_item.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_bg_channel_focused.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/bg_channel_focused.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_bg_category_focused.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/bg_category_focused.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_settings.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_star_border.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_star_border.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_bg_category_normal.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/bg_category_normal.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/layout_activity_settings.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/layout_item_drawer_channel.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/layout/item_drawer_channel.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_bg_channel_normal.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/bg_channel_normal.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_play.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_aspect_ratio.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_aspect_ratio.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_bg_category_selected.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/bg_category_selected.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_ic_tv.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/ic_tv.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/layout_item_category.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/drawable_badge_live_bg.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/drawable/badge_live_bg.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/layout_activity_player.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/layout/activity_player.xml"
+    },
+    {
+        "merged": "com.soni.iptv.app-debug-36:/layout_activity_main.xml.flat",
+        "source": "com.soni.iptv.app-main-38:/layout/activity_main.xml"
+    }
+]

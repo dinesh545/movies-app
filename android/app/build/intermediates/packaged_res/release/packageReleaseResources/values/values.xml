@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar"><item name="colorPrimary">#0284C7</item><item name="colorSecondary">#38BDF8</item><item name="android:windowBackground">#0F172A</item></style>
+</resources>
