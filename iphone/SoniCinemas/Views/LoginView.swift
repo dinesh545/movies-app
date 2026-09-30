@@ -85,11 +85,13 @@ struct LoginView: View {
                         
                         HStack {
                             Text("Don't have an account?").foregroundColor(.gray)
-                            Button("Register Now") {
+                            Button(action: {
                                 showRegister = true
+                            }) {
+                                Text("Register Now")
+                                    .bold()
+                                    .foregroundColor(.red)
                             }
-                            .foregroundColor(.red)
-                            .fontWeight(.bold)
                         }
                     }
                 }

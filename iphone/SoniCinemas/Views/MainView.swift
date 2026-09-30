@@ -68,9 +68,8 @@ struct ProfileView: View {
                     }) {
                         HStack {
                             Image(systemName: "rectangle.portrait.and.arrow.right")
-                            Text("LOGOUT")
+                            Text("LOGOUT").bold()
                         }
-                        .fontWeight(.bold)
                         .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.red)

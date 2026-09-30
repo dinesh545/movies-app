@@ -2,7 +2,7 @@ name: SoniCinemas
 options:
   bundleIdPrefix: com.movieapp
   deploymentTarget:
-    iOS: "15.0"
+    iOS: "16.0"
   xcodeVersion: "15.0"
 targets:
   SoniCinemas:

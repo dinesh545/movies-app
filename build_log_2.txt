@@ -1,0 +1,396 @@
+﻿2026-09-30T13:54:58.8216410Z Current runner version: '2.337.0'
+2026-09-30T13:54:58.8237410Z ##[group]Runner Image Provisioner
+2026-09-30T13:54:58.8238070Z Hosted Compute Agent
+2026-09-30T13:54:58.8238490Z Version: 20260828.587
+2026-09-30T13:54:58.8238950Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+2026-09-30T13:54:58.8241080Z Build Date: 2026-08-28T16:44:25Z
+2026-09-30T13:54:58.8241610Z Worker ID: {339c7059-4ca1-4452-8b01-ba28de46d3a1}
+2026-09-30T13:54:58.8242080Z Azure Region: westus
+2026-09-30T13:54:58.8242490Z ##[endgroup]
+2026-09-30T13:54:58.8243690Z ##[group]Operating System
+2026-09-30T13:54:58.8244160Z macOS
+2026-09-30T13:54:58.8244540Z 14.8.9
+2026-09-30T13:54:58.8244880Z 23J631
+2026-09-30T13:54:58.8246030Z ##[endgroup]
+2026-09-30T13:54:58.8246440Z ##[group]Runner Image
+2026-09-30T13:54:58.8271130Z Image: macos-14-arm64
+2026-09-30T13:54:58.8272810Z Version: 20260831.0302.1
+2026-09-30T13:54:58.8279630Z Included Software: https://github.com/actions/runner-images/blob/macos-14-arm64/20260831.0302/images/macos/macos-14-arm64-Readme.md
+2026-09-30T13:54:58.8283310Z Image Release: https://github.com/actions/runner-images/releases/tag/macos-14-arm64%2F20260831.0302
+2026-09-30T13:54:58.8323610Z ##[endgroup]
+2026-09-30T13:54:58.8369400Z ##[group]GITHUB_TOKEN Permissions
+2026-09-30T13:54:58.8371690Z Contents: read
+2026-09-30T13:54:58.8372060Z Metadata: read
+2026-09-30T13:54:58.8372410Z Packages: read
+2026-09-30T13:54:58.8372750Z ##[endgroup]
+2026-09-30T13:54:58.8374520Z Secret source: Actions
+2026-09-30T13:54:58.8375080Z Cache mode: write
+2026-09-30T13:54:58.8375510Z Prepare workflow directory
+2026-09-30T13:54:58.8667430Z Prepare all required actions
+2026-09-30T13:54:58.8746400Z Getting action download info
+2026-09-30T13:54:59.3539620Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-09-30T13:54:59.8958430Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-09-30T13:55:00.1870710Z Complete job name: build-ios
+2026-09-30T13:55:00.2434980Z ##[group]Run actions/checkout@v4
+2026-09-30T13:55:00.2435960Z with:
+2026-09-30T13:55:00.2436300Z   repository: dinesh545/movies-app
+2026-09-30T13:55:00.2439830Z   token: ***
+2026-09-30T13:55:00.2440210Z   ssh-strict: true
+2026-09-30T13:55:00.2440580Z   ssh-user: git
+2026-09-30T13:55:00.2440910Z   persist-credentials: true
+2026-09-30T13:55:00.2441270Z   clean: true
+2026-09-30T13:55:00.2442010Z   sparse-checkout-cone-mode: true
+2026-09-30T13:55:00.2442410Z   fetch-depth: 1
+2026-09-30T13:55:00.2442730Z   fetch-tags: false
+2026-09-30T13:55:00.2443110Z   show-progress: true
+2026-09-30T13:55:00.2443510Z   lfs: false
+2026-09-30T13:55:00.2443810Z   submodules: false
+2026-09-30T13:55:00.2444150Z   set-safe-directory: true
+2026-09-30T13:55:00.2444580Z   allow-unsafe-pr-checkout: false
+2026-09-30T13:55:00.2445240Z ##[endgroup]
+2026-09-30T13:55:00.7691710Z Syncing repository: dinesh545/movies-app
+2026-09-30T13:55:00.7693580Z ##[group]Getting Git version info
+2026-09-30T13:55:00.7694310Z Working directory is '/Users/runner/work/movies-app/movies-app'
+2026-09-30T13:55:00.7695310Z [command]/opt/homebrew/bin/git version
+2026-09-30T13:55:00.8211990Z git version 2.55.0
+2026-09-30T13:55:00.8234590Z ##[endgroup]
+2026-09-30T13:55:00.8253400Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/cac5b1f1-08a2-4378-a229-5556169fdf83/.gitconfig'
+2026-09-30T13:55:00.8263710Z Temporarily overriding HOME='/Users/runner/work/_temp/cac5b1f1-08a2-4378-a229-5556169fdf83' before making global git config changes
+2026-09-30T13:55:00.8266230Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-30T13:55:00.8274330Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/movies-app/movies-app
+2026-09-30T13:55:00.8479600Z Deleting the contents of '/Users/runner/work/movies-app/movies-app'
+2026-09-30T13:55:00.8492630Z ##[group]Initializing the repository
+2026-09-30T13:55:00.8501980Z [command]/opt/homebrew/bin/git init /Users/runner/work/movies-app/movies-app
+2026-09-30T13:55:00.8908960Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-09-30T13:55:00.8910040Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-09-30T13:55:00.8910940Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-09-30T13:55:00.8911540Z hint: call:
+2026-09-30T13:55:00.8911900Z hint:
+2026-09-30T13:55:00.8912340Z hint: 	git config --global init.defaultBranch <name>
+2026-09-30T13:55:00.8912840Z hint:
+2026-09-30T13:55:00.8913850Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-09-30T13:55:00.8914800Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-09-30T13:55:00.8915460Z hint:
+2026-09-30T13:55:00.8915840Z hint: 	git branch -m <name>
+2026-09-30T13:55:00.8934810Z hint:
+2026-09-30T13:55:00.8936620Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-09-30T13:55:00.8938680Z Initialized empty Git repository in /Users/runner/work/movies-app/movies-app/.git/
+2026-09-30T13:55:00.8940730Z [command]/opt/homebrew/bin/git remote add origin https://github.com/dinesh545/movies-app
+2026-09-30T13:55:00.9051020Z ##[endgroup]
+2026-09-30T13:55:00.9054150Z ##[group]Disabling automatic garbage collection
+2026-09-30T13:55:00.9057620Z [command]/opt/homebrew/bin/git config --local gc.auto 0
+2026-09-30T13:55:00.9125880Z ##[endgroup]
+2026-09-30T13:55:00.9126730Z ##[group]Setting up auth
+2026-09-30T13:55:00.9129450Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-30T13:55:00.9179480Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-30T13:55:01.0172190Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-30T13:55:01.0293970Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-30T13:55:01.1212570Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-30T13:55:01.1292920Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T13:55:01.3257540Z [command]/opt/homebrew/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-09-30T13:55:01.3441350Z ##[endgroup]
+2026-09-30T13:55:01.3442480Z ##[group]Fetching the repository
+2026-09-30T13:55:01.3447390Z [command]/opt/homebrew/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +3d17ca00f9dc644c23a13aaae88631ba2a83a7a7:refs/remotes/origin/main
+2026-09-30T13:55:04.5931780Z From https://github.com/dinesh545/movies-app
+2026-09-30T13:55:04.5933680Z  * [new ref]         3d17ca00f9dc644c23a13aaae88631ba2a83a7a7 -> origin/main
+2026-09-30T13:55:04.6111080Z ##[endgroup]
+2026-09-30T13:55:04.6114190Z ##[group]Determining the checkout info
+2026-09-30T13:55:04.6115900Z ##[endgroup]
+2026-09-30T13:55:04.6130370Z [command]/opt/homebrew/bin/git sparse-checkout disable
+2026-09-30T13:55:04.6227710Z [command]/opt/homebrew/bin/git config --local --unset-all extensions.worktreeConfig
+2026-09-30T13:55:04.6281060Z ##[group]Checking out the ref
+2026-09-30T13:55:04.6283610Z [command]/opt/homebrew/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-09-30T13:55:05.9217460Z Updating files:  49% (1516/3093)
+2026-09-30T13:55:05.9343860Z Updating files:  50% (1547/3093)
+2026-09-30T13:55:05.9415970Z Updating files:  51% (1578/3093)
+2026-09-30T13:55:05.9816460Z Updating files:  52% (1609/3093)
+2026-09-30T13:55:05.9869180Z Updating files:  53% (1640/3093)
+2026-09-30T13:55:06.0139150Z Updating files:  54% (1671/3093)
+2026-09-30T13:55:06.0555140Z Updating files:  55% (1702/3093)
+2026-09-30T13:55:06.1905330Z Updating files:  56% (1733/3093)
+2026-09-30T13:55:06.2361120Z Updating files:  57% (1764/3093)
+2026-09-30T13:55:06.2710460Z Updating files:  58% (1794/3093)
+2026-09-30T13:55:06.2834990Z Updating files:  59% (1825/3093)
+2026-09-30T13:55:06.2967130Z Updating files:  60% (1856/3093)
+2026-09-30T13:55:06.3012680Z Updating files:  61% (1887/3093)
+2026-09-30T13:55:06.3061870Z Updating files:  62% (1918/3093)
+2026-09-30T13:55:06.3173720Z Updating files:  63% (1949/3093)
+2026-09-30T13:55:06.3641260Z Updating files:  64% (1980/3093)
+2026-09-30T13:55:06.3845510Z Updating files:  65% (2011/3093)
+2026-09-30T13:55:06.4106350Z Updating files:  66% (2042/3093)
+2026-09-30T13:55:06.4159760Z Updating files:  67% (2073/3093)
+2026-09-30T13:55:06.4204720Z Updating files:  68% (2104/3093)
+2026-09-30T13:55:06.4655170Z Updating files:  69% (2135/3093)
+2026-09-30T13:55:06.5319550Z Updating files:  70% (2166/3093)
+2026-09-30T13:55:06.5392430Z Updating files:  71% (2197/3093)
+2026-09-30T13:55:06.5444910Z Updating files:  72% (2227/3093)
+2026-09-30T13:55:06.5501020Z Updating files:  73% (2258/3093)
+2026-09-30T13:55:06.5552930Z Updating files:  74% (2289/3093)
+2026-09-30T13:55:06.5597410Z Updating files:  75% (2320/3093)
+2026-09-30T13:55:06.5680900Z Updating files:  76% (2351/3093)
+2026-09-30T13:55:06.5760820Z Updating files:  77% (2382/3093)
+2026-09-30T13:55:06.5826330Z Updating files:  78% (2413/3093)
+2026-09-30T13:55:06.5867660Z Updating files:  79% (2444/3093)
+2026-09-30T13:55:06.5918540Z Updating files:  80% (2475/3093)
+2026-09-30T13:55:06.5963040Z Updating files:  81% (2506/3093)
+2026-09-30T13:55:06.6013280Z Updating files:  82% (2537/3093)
+2026-09-30T13:55:06.6288340Z Updating files:  83% (2568/3093)
+2026-09-30T13:55:06.6385250Z Updating files:  84% (2599/3093)
+2026-09-30T13:55:06.6410580Z Updating files:  85% (2630/3093)
+2026-09-30T13:55:06.6431900Z Updating files:  86% (2660/3093)
+2026-09-30T13:55:06.6432390Z Updating files:  87% (2691/3093)
+2026-09-30T13:55:06.6539850Z Updating files:  87% (2692/3093)
+2026-09-30T13:55:06.6607690Z Updating files:  88% (2722/3093)
+2026-09-30T13:55:06.6773090Z Updating files:  89% (2753/3093)
+2026-09-30T13:55:06.6904430Z Updating files:  90% (2784/3093)
+2026-09-30T13:55:06.7346960Z Updating files:  91% (2815/3093)
+2026-09-30T13:55:06.7977690Z Updating files:  92% (2846/3093)
+2026-09-30T13:55:06.8042340Z Updating files:  93% (2877/3093)
+2026-09-30T13:55:06.8074920Z Updating files:  94% (2908/3093)
+2026-09-30T13:55:06.9932410Z Updating files:  95% (2939/3093)
+2026-09-30T13:55:07.0005360Z Updating files:  96% (2970/3093)
+2026-09-30T13:55:07.0037990Z Updating files:  97% (3001/3093)
+2026-09-30T13:55:07.0085660Z Updating files:  98% (3032/3093)
+2026-09-30T13:55:07.1264090Z Updating files:  99% (3063/3093)
+2026-09-30T13:55:07.1265100Z Updating files: 100% (3093/3093)
+2026-09-30T13:55:07.1267750Z Updating files: 100% (3093/3093), done.
+2026-09-30T13:55:07.1489980Z Switched to a new branch 'main'
+2026-09-30T13:55:07.1496170Z branch 'main' set up to track 'origin/main'.
+2026-09-30T13:55:07.1533690Z ##[endgroup]
+2026-09-30T13:55:07.1679170Z [command]/opt/homebrew/bin/git log -1 --format=%H
+2026-09-30T13:55:07.1753480Z 3d17ca00f9dc644c23a13aaae88631ba2a83a7a7
+2026-09-30T13:55:07.2171170Z ##[group]Run XCODE_16=$(find /Applications -maxdepth 1 -name "Xcode_16*.app" | sort -V | tail -n 1)
+2026-09-30T13:55:07.2171820Z [36;1mXCODE_16=$(find /Applications -maxdepth 1 -name "Xcode_16*.app" | sort -V | tail -n 1)[0m
+2026-09-30T13:55:07.2172200Z [36;1mif [ -n "$XCODE_16" ]; then[0m
+2026-09-30T13:55:07.2172400Z [36;1m  echo "Selecting $XCODE_16"[0m
+2026-09-30T13:55:07.2172680Z [36;1m  sudo xcode-select -s "$XCODE_16/Contents/Developer"[0m
+2026-09-30T13:55:07.2173010Z [36;1mfi[0m
+2026-09-30T13:55:07.2173160Z [36;1mxcodebuild -version[0m
+2026-09-30T13:55:07.2259110Z shell: /bin/bash -e {0}
+2026-09-30T13:55:07.2259390Z ##[endgroup]
+2026-09-30T13:55:07.2910170Z Selecting /Applications/Xcode_16.2.0.app
+2026-09-30T13:55:10.7142570Z Xcode 16.2
+2026-09-30T13:55:10.7143340Z Build version 16C5032a
+2026-09-30T13:55:10.7233690Z ##[group]Run brew install xcodegen
+2026-09-30T13:55:10.7233980Z [36;1mbrew install xcodegen[0m
+2026-09-30T13:55:10.7308530Z shell: /bin/bash -e {0}
+2026-09-30T13:55:10.7308740Z ##[endgroup]
+2026-09-30T13:55:13.9025330Z [32m==>[0m [1mDownloading bottle manifests[0m
+2026-09-30T13:55:13.9330180Z ✔︎ Bottle Manifest xcodegen (2.46.0)
+2026-09-30T13:55:13.9330680Z [34m==>[0m [1mWould install 1 formula:[0m
+2026-09-30T13:55:13.9432120Z [32m==>[0m [1mFetching downloads for: [32mxcodegen[39m[0m
+2026-09-30T13:55:13.9443220Z xcodegen
+2026-09-30T13:55:14.3658670Z ✔︎ Bottle xcodegen (2.46.0)
+2026-09-30T13:55:14.4323030Z [34m==>[0m [1mPouring xcodegen--2.46.0.arm64_sonoma.bottle.1.tar.gz[0m
+2026-09-30T13:55:14.5632760Z 🍺  /opt/homebrew/Cellar/xcodegen/2.46.0: 38 files, 7.6MB
+2026-09-30T13:55:14.5791930Z ##[group]Run cd iphone
+2026-09-30T13:55:14.5792140Z [36;1mcd iphone[0m
+2026-09-30T13:55:14.5792580Z [36;1mxcodegen generate[0m
+2026-09-30T13:55:14.5889740Z shell: /bin/bash -e {0}
+2026-09-30T13:55:14.5890450Z ##[endgroup]
+2026-09-30T13:55:14.6641290Z ⚙️  Generating plists...
+2026-09-30T13:55:14.6642180Z ⚙️  Generating project...
+2026-09-30T13:55:14.6747080Z ⚙️  Writing project...
+2026-09-30T13:55:14.6827200Z Created project at /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:14.6895450Z ##[group]Run cd iphone
+2026-09-30T13:55:14.6895840Z [36;1mcd iphone[0m
+2026-09-30T13:55:14.6896030Z [36;1mmkdir -p Payload[0m
+2026-09-30T13:55:14.6896250Z [36;1mxcodebuild archive \[0m
+2026-09-30T13:55:14.6896510Z [36;1m  -project SoniCinemas.xcodeproj \[0m
+2026-09-30T13:55:14.6896770Z [36;1m  -scheme SoniCinemas \[0m
+2026-09-30T13:55:14.6897070Z [36;1m  -archivePath ./build/SoniCinemas.xcarchive \[0m
+2026-09-30T13:55:14.6897500Z [36;1m  -destination "generic/platform=iOS" \[0m
+2026-09-30T13:55:14.6897740Z [36;1m  CODE_SIGNING_ALLOWED=NO \[0m
+2026-09-30T13:55:14.6897960Z [36;1m  CODE_SIGNING_REQUIRED=NO \[0m
+2026-09-30T13:55:14.6898200Z [36;1m  CODE_SIGN_IDENTITY=""[0m
+2026-09-30T13:55:14.6898540Z [36;1mcp -r ./build/SoniCinemas.xcarchive/Products/Applications/SoniCinemas.app Payload/[0m
+2026-09-30T13:55:14.6898920Z [36;1mzip -r SoniCinemas.ipa Payload[0m
+2026-09-30T13:55:14.6972680Z shell: /bin/bash -e {0}
+2026-09-30T13:55:14.6973460Z ##[endgroup]
+2026-09-30T13:55:15.4876780Z Command line invocation:
+2026-09-30T13:55:15.4881630Z     /Applications/Xcode_16.2.app/Contents/Developer/usr/bin/xcodebuild archive -project SoniCinemas.xcodeproj -scheme SoniCinemas -archivePath ./build/SoniCinemas.xcarchive -destination generic/platform=iOS CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY=
+2026-09-30T13:55:15.4886030Z 
+2026-09-30T13:55:15.4886560Z User defaults from command line:
+2026-09-30T13:55:15.4887240Z     IDEArchivePathOverride = /Users/runner/work/movies-app/movies-app/iphone/build/SoniCinemas.xcarchive
+2026-09-30T13:55:15.4888940Z     IDEPackageSupportUseBuiltinSCM = YES
+2026-09-30T13:55:15.4889270Z 
+2026-09-30T13:55:15.4889420Z Build settings from command line:
+2026-09-30T13:55:15.4890180Z     CODE_SIGN_IDENTITY = 
+2026-09-30T13:55:15.4891120Z     CODE_SIGNING_ALLOWED = NO
+2026-09-30T13:55:15.4891920Z     CODE_SIGNING_REQUIRED = NO
+2026-09-30T13:55:15.4892460Z 
+2026-09-30T13:55:20.1105990Z Prepare packages
+2026-09-30T13:55:20.1208970Z 
+2026-09-30T13:55:20.1540610Z note: Using codesigning identity override: 
+2026-09-30T13:55:21.9305230Z ComputeTargetDependencyGraph
+2026-09-30T13:55:22.0619890Z note: Building targets in dependency order
+2026-09-30T13:55:22.0721530Z note: Target dependency graph (1 target)
+2026-09-30T13:55:22.0822840Z     Target 'SoniCinemas' in project 'SoniCinemas' (no dependencies)
+2026-09-30T13:55:22.0948860Z 
+2026-09-30T13:55:22.1330450Z GatherProvisioningInputs
+2026-09-30T13:55:22.1469120Z 
+2026-09-30T13:55:22.1571120Z CreateBuildDescription
+2026-09-30T13:55:22.1758200Z 
+2026-09-30T13:55:22.1870740Z ExecuteExternalTool /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+2026-09-30T13:55:26.9138310Z 
+2026-09-30T13:55:26.9243940Z ExecuteExternalTool /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -x c -c /dev/null
+2026-09-30T13:55:27.5921360Z 
+2026-09-30T13:55:27.6230030Z ExecuteExternalTool /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+2026-09-30T13:55:27.9532480Z 
+2026-09-30T13:55:28.0023230Z Build description signature: c2eff61c5da123551335bcb1e2e9343f
+2026-09-30T13:55:28.0131870Z Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/XCBuildData/c2eff61c5da123551335bcb1e2e9343f.xcbuilddata
+2026-09-30T13:55:28.0241280Z CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath
+2026-09-30T13:55:28.0352870Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:28.0479700Z     builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath
+2026-09-30T13:55:28.0580470Z 
+2026-09-30T13:55:28.0686140Z CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation
+2026-09-30T13:55:28.0789720Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:28.0893770Z     builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation
+2026-09-30T13:55:28.1007110Z 
+2026-09-30T13:55:28.1111390Z CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath
+2026-09-30T13:55:28.1217980Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:28.1321490Z     builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath
+2026-09-30T13:55:28.1421000Z 
+2026-09-30T13:55:28.1526350Z ClangStatCache /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.2-22C146-6f6929c68f51360d5ca70a73a7e0c2f9.sdkstatcache
+2026-09-30T13:55:28.1629760Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:28.1733220Z     /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -o /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.2-22C146-6f6929c68f51360d5ca70a73a7e0c2f9.sdkstatcache
+2026-09-30T13:55:30.9724430Z 
+2026-09-30T13:55:30.9827600Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas-52a9b65eeacb0da484418d0560276ea9-VFS-iphoneos/all-product-headers.yaml
+2026-09-30T13:55:30.9930360Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:31.0037070Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas-52a9b65eeacb0da484418d0560276ea9-VFS-iphoneos/all-product-headers.yaml
+2026-09-30T13:55:31.0141300Z 
+2026-09-30T13:55:31.0158180Z CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/EagerLinkingTBDs/Release-iphoneos
+2026-09-30T13:55:31.0265960Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:31.0372370Z     builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/EagerLinkingTBDs/Release-iphoneos
+2026-09-30T13:55:31.0474110Z 
+2026-09-30T13:55:31.0576070Z CreateBuildDirectory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos
+2026-09-30T13:55:31.0681080Z     cd /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas.xcodeproj
+2026-09-30T13:55:31.0784320Z     builtin-create-build-directory /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos
+2026-09-30T13:55:31.0886500Z 
+2026-09-30T13:55:31.0991860Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas.hmap (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.1097150Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.1200520Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas.hmap
+2026-09-30T13:55:31.1302610Z 
+2026-09-30T13:55:31.1406190Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas.DependencyMetadataFileList (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.1509670Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.1613740Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas.DependencyMetadataFileList
+2026-09-30T13:55:31.1718050Z 
+2026-09-30T13:55:31.1822450Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-project-headers.hmap (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.1926730Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.2057020Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-project-headers.hmap
+2026-09-30T13:55:31.2158940Z 
+2026-09-30T13:55:31.2262830Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-own-target-headers.hmap (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.2383570Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.2399030Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-own-target-headers.hmap
+2026-09-30T13:55:31.2501280Z 
+2026-09-30T13:55:31.2606020Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-generated-files.hmap (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.2710580Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.2833960Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-generated-files.hmap
+2026-09-30T13:55:31.2935750Z 
+2026-09-30T13:55:31.3038100Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-target-headers.hmap (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.3145730Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.3247970Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-target-headers.hmap
+2026-09-30T13:55:31.3349700Z 
+2026-09-30T13:55:31.3391490Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-non-framework-target-headers.hmap (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.3504570Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.3606860Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-non-framework-target-headers.hmap
+2026-09-30T13:55:31.3711440Z 
+2026-09-30T13:55:31.3821620Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas_const_extract_protocols.json (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.3928900Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.4031070Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas_const_extract_protocols.json
+2026-09-30T13:55:31.4134320Z 
+2026-09-30T13:55:31.4238630Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.SwiftFileList (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.4341780Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.4444360Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.SwiftFileList
+2026-09-30T13:55:31.4548720Z 
+2026-09-30T13:55:31.4650870Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.SwiftConstValuesFileList (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.4754970Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.4858060Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.SwiftConstValuesFileList
+2026-09-30T13:55:31.4959880Z 
+2026-09-30T13:55:31.5061750Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.LinkFileList (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.5164630Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.5266460Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.LinkFileList
+2026-09-30T13:55:31.5368090Z 
+2026-09-30T13:55:31.5473340Z WriteAuxiliaryFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas-OutputFileMap.json (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.5587570Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.5690270Z     write-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas-OutputFileMap.json
+2026-09-30T13:55:31.5795470Z 
+2026-09-30T13:55:31.5897710Z SymLink /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos/SoniCinemas.app ../../InstallationBuildProductsLocation/Applications/SoniCinemas.app (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.6000060Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.6101260Z     /bin/ln -sfh ../../InstallationBuildProductsLocation/Applications/SoniCinemas.app /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos/SoniCinemas.app
+2026-09-30T13:55:31.6201820Z 
+2026-09-30T13:55:31.6309700Z MkDir /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation/Applications/SoniCinemas.app (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.6409260Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.6513750Z     /bin/mkdir -p /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation/Applications/SoniCinemas.app
+2026-09-30T13:55:31.6620200Z 
+2026-09-30T13:55:31.6723470Z ProcessInfoPlistFile /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation/Applications/SoniCinemas.app/Info.plist /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Info.plist (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.6825660Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.6933980Z     builtin-infoPlistUtility /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation/Applications/SoniCinemas.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -requiredArchitecture arm64 -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/InstallationBuildProductsLocation/Applications/SoniCinemas.app/Info.plist
+2026-09-30T13:55:31.7030030Z 
+2026-09-30T13:55:31.7131820Z SwiftDriver SoniCinemas normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.7239550Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.7372050Z     builtin-SwiftDriver -- /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name SoniCinemas -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -target arm64-apple-ios15.0 -g -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -F /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.2-22C146-6f6929c68f51360d5ca70a73a7e0c2f9.sdkstatcache -output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas-Swift.h -working-directory /Users/runner/work/movies-app/movies-app/iphone -no-emit-module-separately-wmo
+2026-09-30T13:55:31.7413790Z 
+2026-09-30T13:55:31.7516270Z SwiftDriver\ Compilation SoniCinemas normal arm64 com.apple.xcode.tools.swift.compiler (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.7622930Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.7767410Z     builtin-Swift-Compilation -- /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name SoniCinemas -O -whole-module-optimization -enforce-exclusivity\=checked @/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -target arm64-apple-ios15.0 -g -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -F /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.2-22C146-6f6929c68f51360d5ca70a73a7e0c2f9.sdkstatcache -output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas-Swift.h -working-directory /Users/runner/work/movies-app/movies-app/iphone -no-emit-module-separately-wmo
+2026-09-30T13:55:31.7883930Z 
+2026-09-30T13:55:31.7999980Z SwiftCompile normal arm64 Compiling\ DownloadsView.swift,\ LoginView.swift,\ MainView.swift,\ Models.swift,\ MovieListView.swift,\ NetworkService.swift,\ PlayerView.swift,\ RegisterView.swift,\ SeriesListView.swift,\ SessionManager.swift,\ SoniCinemasApp.swift,\ SuggestionView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/DownloadsView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Models/Models.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MovieListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/NetworkService.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/PlayerView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/RegisterView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SeriesListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/SessionManager.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/SoniCinemasApp.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SuggestionView.swift (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.8008400Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.8150010Z     builtin-swiftTaskExecution -- /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/DownloadsView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Models/Models.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MovieListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/NetworkService.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/PlayerView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/RegisterView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SeriesListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/SessionManager.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/SoniCinemasApp.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SuggestionView.swift -supplementary-output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/supplementaryOutputs-1 -target arm64-apple-ios15.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -I /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -F /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -no-color-diagnostics -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 5 -enforce-exclusivity\=checked -O -serialize-debugging-options -const-gather-protocols-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/movies-app/movies-app/iphone -resource-dir /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -file-compilation-dir /Users/runner/work/movies-app/movies-app/iphone -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.2-22C146-6f6929c68f51360d5ca70a73a7e0c2f9.sdkstatcache -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources -module-name SoniCinemas -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.2 -target-sdk-name iphoneos18.2 -external-plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -enable-default-cmo -num-threads 3 -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/DownloadsView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/LoginView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MainView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/Models.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MovieListView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/NetworkService.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/PlayerView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/RegisterView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SeriesListView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SessionManager.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemasApp.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SuggestionView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/DownloadsView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/LoginView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MainView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/Models.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MovieListView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/NetworkService.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/PlayerView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/RegisterView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SeriesListView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SessionManager.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemasApp.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SuggestionView.o
+2026-09-30T13:55:31.8293150Z 
+2026-09-30T13:55:31.8395770Z CompileSwift normal arm64 (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:31.8499500Z     cd /Users/runner/work/movies-app/movies-app/iphone
+2026-09-30T13:55:31.8657940Z     /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -c /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/DownloadsView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Models/Models.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MovieListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/NetworkService.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/PlayerView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/RegisterView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SeriesListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/SessionManager.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/SoniCinemasApp.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SuggestionView.swift -supplementary-output-file-map /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/supplementaryOutputs-1 -target arm64-apple-ios15.0 -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.2.sdk -I /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -F /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos -no-color-diagnostics -g -debug-info-format\=dwarf -dwarf-version\=4 -module-cache-path /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 5 -enforce-exclusivity\=checked -O -serialize-debugging-options -const-gather-protocols-file /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemas_const_extract_protocols.json -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /Users/runner/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/runner/work/movies-app/movies-app/iphone -resource-dir /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift -file-compilation-dir /Users/runner/work/movies-app/movies-app/iphone -Xcc -ivfsstatcache -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphoneos18.2-22C146-6f6929c68f51360d5ca70a73a7e0c2f9.sdkstatcache -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-generated-files.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-own-target-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/SoniCinemas-project-headers.hmap -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/BuildProductsPath/Release-iphoneos/include -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources/arm64 -Xcc -I/Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/DerivedSources -module-name SoniCinemas -frontend-parseable-output -disable-clang-spi -target-sdk-version 18.2 -target-sdk-name iphoneos18.2 -external-plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins\#/Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -external-plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/lib/swift/host/plugins\#/Applications/Xcode_16.2.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server -plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins -plugin-path /Applications/Xcode_16.2.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/local/lib/swift/host/plugins -enable-default-cmo -num-threads 3 -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/DownloadsView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/LoginView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MainView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/Models.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MovieListView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/NetworkService.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/PlayerView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/RegisterView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SeriesListView.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SessionManager.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemasApp.o -o /Users/runner/Library/Developer/Xcode/DerivedData/SoniCinemas-ajinqdffxaytofhbnttrrsuwtoxj/Build/Intermediates.noindex/ArchiveIntermediates/SoniCinemas/IntermediateBuildFilesPath/SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SuggestionView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/DownloadsView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/LoginView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MainView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/Models.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/MovieListView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/NetworkService.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/PlayerView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/RegisterView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SeriesListView.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SessionManager.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SoniCinemasApp.o -index-unit-output-path /SoniCinemas.build/Release-iphoneos/SoniCinemas.build/Objects-normal/arm64/SuggestionView.o
+2026-09-30T13:55:42.6413730Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift:92:30: error: 'fontWeight' is only available in iOS 16.0 or newer
+2026-09-30T13:55:42.6517430Z                             .fontWeight(.bold)
+2026-09-30T13:55:42.6619220Z                              ^
+2026-09-30T13:55:42.6734090Z ** ARCHIVE FAILED **
+2026-09-30T13:55:42.6735450Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift:92:30: note: add 'if #available' version check
+2026-09-30T13:55:42.6922050Z 
+2026-09-30T13:55:42.6922860Z                             .fontWeight(.bold)
+2026-09-30T13:55:42.7067190Z 
+2026-09-30T13:55:42.7067520Z                              ^
+2026-09-30T13:55:42.7170830Z The following build commands failed:
+2026-09-30T13:55:42.7181380Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift:16:9: note: add @available attribute to enclosing property
+2026-09-30T13:55:42.7183710Z 	CompileSwift normal arm64 (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:42.7184810Z     var body: some View {
+2026-09-30T13:55:42.7269000Z 	SwiftCompile normal arm64 Compiling\ DownloadsView.swift,\ LoginView.swift,\ MainView.swift,\ Models.swift,\ MovieListView.swift,\ NetworkService.swift,\ PlayerView.swift,\ RegisterView.swift,\ SeriesListView.swift,\ SessionManager.swift,\ SoniCinemasApp.swift,\ SuggestionView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/DownloadsView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Models/Models.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MovieListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/NetworkService.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/PlayerView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/RegisterView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SeriesListView.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Services/SessionManager.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/SoniCinemasApp.swift /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/SuggestionView.swift (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:42.7278750Z         ^
+2026-09-30T13:55:42.7322810Z 	Archiving project SoniCinemas with scheme SoniCinemas
+2026-09-30T13:55:42.7324450Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/LoginView.swift:3:8: note: add @available attribute to enclosing struct
+2026-09-30T13:55:42.7364310Z (3 failures)
+2026-09-30T13:55:42.7364960Z struct LoginView: View {
+2026-09-30T13:55:42.7384060Z        ^
+2026-09-30T13:55:42.7406090Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift:73:26: error: 'fontWeight' is only available in iOS 16.0 or newer
+2026-09-30T13:55:42.7436240Z                         .fontWeight(.bold)
+2026-09-30T13:55:42.7437520Z                          ^
+2026-09-30T13:55:42.7439090Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift:73:26: note: add 'if #available' version check
+2026-09-30T13:55:42.7440910Z                         .fontWeight(.bold)
+2026-09-30T13:55:42.7442020Z                          ^
+2026-09-30T13:55:42.7473490Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift:45:9: note: add @available attribute to enclosing property
+2026-09-30T13:55:42.7483340Z     var body: some View {
+2026-09-30T13:55:42.7483960Z         ^
+2026-09-30T13:55:42.7485210Z /Users/runner/work/movies-app/movies-app/iphone/SoniCinemas/Views/MainView.swift:42:8: note: add @available attribute to enclosing struct
+2026-09-30T13:55:42.7486750Z struct ProfileView: View {
+2026-09-30T13:55:42.7487350Z        ^
+2026-09-30T13:55:42.7487640Z 
+2026-09-30T13:55:42.7489620Z note: Disabling previews because SWIFT_VERSION is set and SWIFT_OPTIMIZATION_LEVEL=-O, expected -Onone (in target 'SoniCinemas' from project 'SoniCinemas')
+2026-09-30T13:55:42.7532250Z ##[error]Process completed with exit code 65.
+2026-09-30T13:55:42.7876400Z Post job cleanup.
+2026-09-30T13:55:43.2822050Z [command]/opt/homebrew/bin/git version
+2026-09-30T13:55:43.3170790Z git version 2.55.0
+2026-09-30T13:55:43.3267580Z Copying '/Users/runner/.gitconfig' to '/Users/runner/work/_temp/fa8ee49d-d178-4053-9974-526d076509f2/.gitconfig'
+2026-09-30T13:55:43.3371010Z Temporarily overriding HOME='/Users/runner/work/_temp/fa8ee49d-d178-4053-9974-526d076509f2' before making global git config changes
+2026-09-30T13:55:43.3474360Z Adding repository directory to the temporary git global config as a safe directory
+2026-09-30T13:55:43.3578100Z [command]/opt/homebrew/bin/git config --global --add safe.directory /Users/runner/work/movies-app/movies-app
+2026-09-30T13:55:43.3766520Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-09-30T13:55:43.3768190Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-09-30T13:55:43.4892170Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-09-30T13:55:43.4949720Z http.https://github.com/.extraheader
+2026-09-30T13:55:43.4962790Z [command]/opt/homebrew/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-09-30T13:55:43.5079340Z [command]/opt/homebrew/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-09-30T13:55:43.6604030Z [command]/opt/homebrew/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-09-30T13:55:43.6911870Z [command]/opt/homebrew/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-09-30T13:55:43.8100180Z Cleaning up orphan processes
+2026-09-30T13:55:44.8189020Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
